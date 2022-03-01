@@ -34,7 +34,7 @@ To get a local copy up and running follow these simple steps.
 
 - Use this command to get a copy:
 ```
-git clone https://github.com/Kakalanp/
+git clone https://github.com/Kakalanp/Leaderboard.git
 ```
 
 - then, run `npm install`, this will install all the dependencies needed.
