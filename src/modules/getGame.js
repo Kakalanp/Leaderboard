@@ -1,4 +1,4 @@
-export default async function getGame() {
+export default async () => {
   const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/FtbSsyyRO5eDxJO72kQu/scores/');
   const responseJSON = await response.json();
   const scrambled = responseJSON.result;
@@ -6,4 +6,4 @@ export default async function getGame() {
   const scores = scrambled.sort((a, b) => b.score - a.score);
   // we return an array of sorted values
   return scores;
-}
+};

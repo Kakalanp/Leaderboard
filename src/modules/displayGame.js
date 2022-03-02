@@ -1,6 +1,6 @@
 import GET from './getGame.js';
 import PRINT from './printGame.js';
 
-export default async function displayGame() {
+export default async () => {
   PRINT(GET());
-}
+};

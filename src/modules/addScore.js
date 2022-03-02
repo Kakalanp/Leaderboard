@@ -1,4 +1,4 @@
-export default async function addScore(Name, Score) {
+export default async (Name, Score) => {
   await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/FtbSsyyRO5eDxJO72kQu/scores/', {
     method: 'POST',
     headers: {
@@ -10,4 +10,4 @@ export default async function addScore(Name, Score) {
       score: Score,
     }),
   });
-}
+};
