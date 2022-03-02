@@ -14,7 +14,7 @@
 
 ## Live Page
 
-[Page Link]()
+[Page Link](https://kakalanp.github.io/Leaderboard/dist/)
 
 
 ## Getting Started
