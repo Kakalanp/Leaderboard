@@ -9,9 +9,12 @@ const refresh = document.getElementById('refresh');
 const name = document.getElementById('input-name');
 const score = document.getElementById('input-score');
 
-submit.addEventListener('click', () => {
-  ADD(name.value, score.value);
+submit.addEventListener('click', async () => {
+  await ADD(name.value, score.value);
   DISPLAY();
+  name.value = '';
+  score.value = '';
+  name.focus();
 });
 
 refresh.addEventListener('click', () => {

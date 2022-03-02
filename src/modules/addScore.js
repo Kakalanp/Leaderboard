@@ -1,5 +1,5 @@
 export default async function addScore(Name, Score) {
-  await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/pHp69yRIlGJ61bg9QCjJ/scores/', {
+  await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/FtbSsyyRO5eDxJO72kQu/scores/', {
     method: 'POST',
     headers: {
       Accept: 'application/json',
