@@ -24,10 +24,14 @@ header {
   border: 2px solid black;
   border-radius: 2px;
   min-width: 300px;
+  max-height: 500px;
+  overflow: auto;
 }
 
 .score {
   padding: 5px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .add-score {
@@ -40,6 +44,6 @@ header {
   margin: 10px;
 }
 
-.submit {
+#submit {
   align-self: flex-end;
 }
