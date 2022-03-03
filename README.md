@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# To Do List
+# Leaderboard
 
-> This is a project that let's you see a list of scores, it isn't functional yet.
+> This is a project that let's you see a list of scores using an API, you can add ypur own and it will be saved on the list forever!
 
 
 ## Built With
