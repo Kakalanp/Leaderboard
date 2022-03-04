@@ -1,3 +1,64 @@
+@font-face {
+  font-family: 'Nuvel';
+  src: url('./assets/Fonts/Nuvel.ttf');
+}
+
+body {
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: 0;
+  width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+  text-align: center;
+  padding: 10vh 0;
+  background:
+    linear-gradient(
+      45deg,
+      rgb(255, 52, 180),
+      rgb(97, 174, 251)
+    );
+}
+
+h1 {
+  position: relative;
+  font-family: Nuvel, sans-serif;
+  font-weight: normal;
+  font-size: 4rem;
+  z-index: 2;
+}
+
+h2 {
+  font-family: Nuvel, sans-serif;
+  font-size: 2.25rem;
+  font-weight: normal;
+}
+
+.h1-background {
+  position: absolute;
+  width: 390px;
+  height: 1rem;
+  background-color: white;
+  left: 50%;
+  margin-left: -195px;
+  margin-top: -87px;
+}
+
+input,
+button {
+  background-color: rgba(255, 255, 255, 0.2);
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+input {
+  min-width: calc(100% - 20px);
+}
+
 header {
   width: 100%;
 }
@@ -5,13 +66,14 @@ header {
 .content {
   display: flex;
   flex-wrap: wrap;
-  margin: 30px;
+  margin: 0;
+  justify-content: center;
 }
 
 .scores {
   display: flex;
   flex-direction: column;
-  margin: 20px;
+  margin: 50px;
 }
 
 .scores-title {
@@ -21,14 +83,18 @@ header {
 }
 
 .display-screen {
-  border: 2px solid black;
-  border-radius: 2px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 10px;
   min-width: 300px;
   max-height: 500px;
   overflow: auto;
 }
 
 .score {
+  background-size: 100%;
+  background-repeat: no-repeat;
   padding: 5px;
   display: flex;
   justify-content: space-between;
@@ -37,13 +103,5 @@ header {
 .add-score {
   display: flex;
   flex-direction: column;
-  margin: 20px;
-}
-
-.add-score > * {
-  margin: 10px;
-}
-
-#submit {
-  align-self: flex-end;
+  margin: 50px;
 }
